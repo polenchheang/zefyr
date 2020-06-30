@@ -176,6 +176,11 @@ class InputConnectionController implements TextInputClient {
       _sentRemoteValues.clear();
     }
   }
+ 
+  // TODO: implement currentTextEditingValue
+  @override
+  TextEditingValue get currentTextEditingValue =>
+      _lastKnownRemoteTextEditingValue;
 
   //
   // Private members
